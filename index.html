@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KPW Proxy Manager</title>
+<style>
+  body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 16px; line-height: 1.7; color: #202124; background: #fff; }
+  h1 { font-size: 1.6rem; margin-bottom: .2rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .sub { color: #5f6368; margin-top: 0; }
+  a { color: #1a73e8; }
+  hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
+</style>
+</head>
+<body>
+<h1>KPW Proxy Manager</h1>
+<p class="sub">Korea POV Walk 채널 운영자가 직접 쓰는 개인용 Windows 프로그램</p>
+
+<p>KPW Proxy Manager는 운영자가 직접 촬영한 4K 도보 영상을 분석용 저용량 MP4로 변환하는 프로그램입니다.
+변환한 파일과 원본↔저용량 시간 대응표를 <b>운영자 본인의 Google Drive</b> 촬영 프로젝트 폴더에 올립니다.
+일반에 배포하지 않는 1인용 도구입니다.</p>
+
+<h2>Google 사용자 데이터 사용</h2>
+<ul>
+  <li>Google Drive API(<code>https://www.googleapis.com/auth/drive</code>)를 사용합니다.
+      운영자 본인의 Drive에서 촬영 프로젝트 폴더를 찾고, 그 안에 '저용량' 폴더를 만들어 변환한 파일을 올리는 데 필요합니다.</li>
+  <li>업로드가 끝나면 파일 이름·크기·체크섬만 읽어 결과를 확인합니다. 기존 파일·폴더를 지우거나 덮어쓰지 않습니다.</li>
+  <li>인증 정보는 운영자의 PC에만 저장되며, Google 외의 어떤 서버로도 보내지 않습니다.</li>
+</ul>
+<p><a href="privacy.html">개인정보처리방침 (Privacy Policy)</a></p>
+
+<hr>
+<h2 lang="en">About (English)</h2>
+<p lang="en">KPW Proxy Manager is a personal, single-user Windows tool used by the operator of the Korea POV Walk channel.
+It converts the operator's own 4K walking videos into small proxy MP4 files and uploads them, together with timecode manifests,
+to the operator's own Google Drive project folders. It is not distributed to the public.</p>
+<p lang="en">It uses the Google Drive API (<code>auth/drive</code> scope) only to find the operator's project folders, create a proxy subfolder,
+upload the converted files, and read file names, sizes and checksums to verify uploads. It never deletes or overwrites existing files.
+Credentials are stored only on the operator's own PC and are not sent to any server other than Google.
+See the <a href="privacy.html">Privacy Policy</a>.</p>
+</body>
+</html>
